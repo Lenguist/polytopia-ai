@@ -1,0 +1,168 @@
+{
+  "title": "Polytopia 3D Implementation Spec",
+  "description": "Structured prompt tree to implement a mobile-friendly 3D version of The Battle of Polytopia using React Three Fiber, three-bvh-csg, Rapier, and deploy to Vercel.",
+  "targetPlatform": "Vercel",
+  "techStack": [
+    "Vite",
+    "React 19",
+    "TypeScript",
+    "@react-three/fiber",
+    "@react-three/drei",
+    "@react-three/rapier",
+    "three",
+    "three-bvh-csg",
+    "three-mesh-bvh"
+  ],
+  "phases": [
+    {
+      "id": 1,
+      "name": "Foundation",
+      "description": "Project scaffolding, Vercel readiness, and base performance configuration for mobile browsers.",
+      "steps": [
+        {
+          "id": "1-1",
+          "slug": "vite-r3f-setup",
+          "title": "Vite + React Three Fiber Project Setup",
+          "file": "1-1-vite-r3f-setup.md"
+        },
+        {
+          "id": "1-2",
+          "slug": "vercel-config",
+          "title": "Vercel Configuration & Environment",
+          "file": "1-2-vercel-config.md"
+        },
+        {
+          "id": "1-3",
+          "slug": "base-performance",
+          "title": "Base Mobile Performance Configuration",
+          "file": "1-3-base-performance.md"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Core Game Logic",
+      "description": "Pure TypeScript game engine independent of Three.js — state, turns, stars, technology, and pathfinding.",
+      "steps": [
+        {
+          "id": "2-1",
+          "slug": "game-types-state",
+          "title": "Game Types & Central State",
+          "file": "2-1-game-types-state.md"
+        },
+        {
+          "id": "2-2",
+          "slug": "turns-stars",
+          "title": "Turn System & Star Economy",
+          "file": "2-2-turns-stars.md"
+        },
+        {
+          "id": "2-3",
+          "slug": "tech-tree",
+          "title": "Technology Tree & Research",
+          "file": "2-3-tech-tree.md"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "3D World",
+      "description": "React Three Fiber scene, procedural square tile grid, and terrain features using three-bvh-csg.",
+      "steps": [
+        {
+          "id": "3-1",
+          "slug": "canvas-camera",
+          "title": "Canvas, Camera & Lighting",
+          "file": "3-1-canvas-camera.md"
+        },
+        {
+          "id": "3-2",
+          "slug": "tile-grid",
+          "title": "Procedural Tile Grid with Instancing",
+          "file": "3-2-tile-grid.md"
+        },
+        {
+          "id": "3-3",
+          "slug": "terrain-csg",
+          "title": "Terrain Features with three-bvh-csg",
+          "file": "3-3-terrain-csg.md"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Units & Movement",
+      "description": "Unit representation, Rapier physics integration, pathfinding, and smooth movement.",
+      "steps": [
+        {
+          "id": "4-1",
+          "slug": "unit-instancing",
+          "title": "Unit Data Model & Instanced Rendering",
+          "file": "4-1-unit-instancing.md"
+        },
+        {
+          "id": "4-2",
+          "slug": "rapier-setup",
+          "title": "Rapier Physics Integration",
+          "file": "4-2-rapier-setup.md"
+        },
+        {
+          "id": "4-3",
+          "slug": "pathfinding-movement",
+          "title": "Chebyshev Pathfinding & Movement",
+          "file": "4-3-pathfinding-movement.md"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Cities, Combat & Flow",
+      "description": "Cities, population, combat resolution, and overall game loop with win conditions.",
+      "steps": [
+        {
+          "id": "5-1",
+          "slug": "cities-population",
+          "title": "Cities, Population & Upgrades",
+          "file": "5-1-cities-population.md"
+        },
+        {
+          "id": "5-2",
+          "slug": "combat-system",
+          "title": "Combat System",
+          "file": "5-2-combat-system.md"
+        },
+        {
+          "id": "5-3",
+          "slug": "game-loop",
+          "title": "Game Loop & Win Conditions",
+          "file": "5-3-game-loop.md"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "UI, Mobile & Deployment",
+      "description": "HUD, mobile controls, performance polish, and final Vercel deployment.",
+      "steps": [
+        {
+          "id": "6-1",
+          "slug": "hud-ui",
+          "title": "HUD, Tech Tree UI & Overlays",
+          "file": "6-1-hud-ui.md"
+        },
+        {
+          "id": "6-2",
+          "slug": "mobile-controls",
+          "title": "Mobile Touch Controls",
+          "file": "6-2-mobile-controls.md"
+        },
+        {
+          "id": "6-3",
+          "slug": "vercel-deploy",
+          "title": "Final Polish & Vercel Deployment",
+          "file": "6-3-vercel-deploy.md"
+        }
+      ]
+    }
+  ]
+}

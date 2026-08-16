@@ -1,0 +1,14 @@
+/* Global styles for Polytopia 3D */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #1a1a2e;
+  touch-action: none; /* better for mobile 3D controls */
+}
